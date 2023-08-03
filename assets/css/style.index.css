@@ -6,7 +6,6 @@
 
 }
 body{
-
     background-color: #18181b
 }
 #main{
@@ -15,10 +14,11 @@ body{
     align-items: center;
     width: 100%;
     height: 100vh;
+    
 
 }
 img {
-    width: 30rem;
+    width: 31rem;
 }
 
 #form{  
@@ -26,37 +26,156 @@ img {
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    border-radius: 6px;
+    border-radius: 8px;
+    gab:2rem
+}
+
+#inout-box label{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #cbd5e1;
 }
 
 #calculator{
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    gab: 2rem;
+
 }
 
 
 #title {
     color: aliceblue;
+    position: relative;
 }
+
+#title ::after {
+  position: absolute;
+  content: " ";
+  width: 8rem;
+  height: 3rem;
+  border-radius: 3px;
+  background-color: #dc2626;
+  bottom: 0;
+  left: 0;
+}
+
 
 .input-box label{
     font-weight: 500;
     font-size: 1.2rem;
-    color:rgb(218, 221, 224);
-    justify-content: space-between;
-    padding: 0.3;
-    border-radius: 5px;
-    margin-top:2px ;
-
+    color:  #cbd5e1;
 }
-.input-fild input{
-    background-color: #f8fafc;
-    border: none;
 
-}
+    .input-field{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #3f3f46;
+        padding: 0.3rem;
+        border-radius: 4px;
+        margin-top: 2px;
+    }
+    
+    .input-field input{
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        font-size: 1.3rem;
+        color: #f8fafc;
+        padding: 0 0.5rem;
+    }
 .-field input :: ::-webkit-outer-spin-buttoninput,
 .-field input :: ::-webkit-inner-spin-buttoninput{
     appearance: none;
+ 
 
+} 
+.unit, 
+.icon{
+    color: #cbd5e1;
+    font-size: 1.3rem;
+    padding: 0.6rem;
+}
+
+#calculate {
+    background-color: #fd1b1b;
+    border: none;
+    color: #f8fafc;
+font-size: 1.25rem;
+padding: 0.5rem 0;
+cursor: pointer;
+width:100%;
+
+}
+#result{
+display: flex;
+align-items: center;
+border-top: 1px solid #ffffff34;
+padding: 0.75rem ;
+
+}
+#imc{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.25rem;
+}
+
+#status{
+    font-size: 1.25rem;
+}
+
+.normal{
+    color:#16a34a
+
+}
+.attention{
+    color: #dc2626;
+}
+
+#descripion{
+    width: 15.5rem;
+}
+
+.more-info  {
+    text-align: center;
+    border-top: 1px solid #ffffff34 ;
+    padding-top: 1.5rem;
+}
+
+.more-info a {
+display: flex;
+    text-align: center;
+    border-top: 1px solid #ffffff34 ;
+    padding-top: 1.5rem;
+    justify-content: center;
+    color: #16a34a;
+    text-decoration: none;
+    transition: color 0.5rem;
+}
+.more-info a:hover{
+    color: #cbd5e1cb;
+}
+
+.hiden{
+    display: none;
+}
+  
+
+@media screen and (max-width : 1024px){
+    #apicture{
+        display: none;
+    }
+main{
+    height: 100%;
+    width: 100%;
+}
+form{
+    height: 100%;
+    width: 100%;
+    border-radius: 0; 
+    justify-content: center;
+}
 }
