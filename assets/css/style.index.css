@@ -36,8 +36,27 @@ img {
 }
 
 
-#title{
+#title {
     color: aliceblue;
+}
 
+.input-box label{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color:rgb(218, 221, 224);
+    justify-content: space-between;
+    padding: 0.3;
+    border-radius: 5px;
+    margin-top:2px ;
+
+}
+.input-fild input{
+    background-color: #f8fafc;
+    border: none;
+
+}
+.-field input :: ::-webkit-outer-spin-buttoninput,
+.-field input :: ::-webkit-inner-spin-buttoninput{
+    appearance: none;
 
 }
