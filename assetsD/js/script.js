@@ -16,3 +16,12 @@ class Products{
         this.category= category;
     }
 }
+
+class CategoryService{
+  constructor(){
+    this.categories=[]; 
+    this.nextCateroruId= 1;
+  
+
+  }
+}
