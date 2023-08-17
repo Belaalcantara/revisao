@@ -41,11 +41,14 @@ class ProductService{
          const id= this.nextCategoryId++
          const product= new Products (id, name, price, category)
          category.products.push(product)
+         this.products.push(product)
 
     }
 }
  
 const CategoryList = new CategoryService();
+const productList = new ProductService(); 
+
 
 function creatCategory(){
     const categoryName = "doce";
@@ -54,3 +57,13 @@ function creatCategory(){
     console.log(CategoryList.categories)
     
 }
+
+function creatProduct(){
+    const productName = " bolo"
+    const producPrice = 20;
+    const productCategory =CategoryList.categories[0]
+
+    productList.addProductor(productName, producPrice, productCategory );
+    console.log(productList.products)
+}
+
