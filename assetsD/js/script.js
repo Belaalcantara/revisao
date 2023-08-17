@@ -21,7 +21,11 @@ class CategoryService{
   constructor(){
     this.categories=[]; 
     this.nextCateroruId= 1;
-  
-
   }
+
+    addCategory(name){
+        const id = this.nextCategoryId++
+        const category = new category (id, name);
+        this.categories.push(category);
+    }
 }
