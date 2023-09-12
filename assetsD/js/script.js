@@ -51,19 +51,24 @@ const productList = new ProductService();
 
 
 function creatCategory(){
-    const categoryName = "doce";
-
+    const categoryName = document.getElementById("categoryName").value;
     CategoryList.addCategory(categoryName);
     console.log(CategoryList.categories)
     
 }
 
 function creatProduct(){
-    const productName = " bolo"
+    const productName = "bolo"
     const producPrice = 20;
     const productCategory =CategoryList.categories[0]
 
     productList.addProductor(productName, producPrice, productCategory );
-    console.log(productList.products)
+     cleanFields()
+     console.log(productList.products)  
 }
+
+
+
+
+
 
